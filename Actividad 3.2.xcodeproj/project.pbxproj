@@ -14,6 +14,9 @@
 		5977656A19FD04F700845CAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5977656919FD04F700845CAC /* Images.xcassets */; };
 		5977656D19FD04F700845CAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5977656B19FD04F700845CAC /* LaunchScreen.xib */; };
 		5977657919FD04F700845CAC /* Actividad_3_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977657819FD04F700845CAC /* Actividad_3_2Tests.m */; };
+		5977658419FD051200845CAC /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977658319FD051200845CAC /* Persona.m */; };
+		5977658719FD08D100845CAC /* Persona+DatosCompletosPersona.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977658619FD08D100845CAC /* Persona+DatosCompletosPersona.m */; };
+		5977658A19FD10E100845CAC /* Persona2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5977658919FD10E100845CAC /* Persona2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		5977657219FD04F700845CAC /* Actividad 3.2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Actividad 3.2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5977657719FD04F700845CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5977657819FD04F700845CAC /* Actividad_3_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Actividad_3_2Tests.m; sourceTree = "<group>"; };
+		5977658219FD051200845CAC /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Persona.h; path = ../Persona.h; sourceTree = "<group>"; };
+		5977658319FD051200845CAC /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Persona.m; path = ../Persona.m; sourceTree = "<group>"; };
+		5977658519FD08D100845CAC /* Persona+DatosCompletosPersona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Persona+DatosCompletosPersona.h"; sourceTree = "<group>"; };
+		5977658619FD08D100845CAC /* Persona+DatosCompletosPersona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Persona+DatosCompletosPersona.m"; sourceTree = "<group>"; };
+		5977658819FD10E100845CAC /* Persona2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona2.h; sourceTree = "<group>"; };
+		5977658919FD10E100845CAC /* Persona2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,12 @@
 				5977656119FD04F700845CAC /* AppDelegate.m */,
 				5977656319FD04F700845CAC /* ViewController.h */,
 				5977656419FD04F700845CAC /* ViewController.m */,
+				5977658519FD08D100845CAC /* Persona+DatosCompletosPersona.h */,
+				5977658619FD08D100845CAC /* Persona+DatosCompletosPersona.m */,
+				5977658219FD051200845CAC /* Persona.h */,
+				5977658319FD051200845CAC /* Persona.m */,
+				5977658819FD10E100845CAC /* Persona2.h */,
+				5977658919FD10E100845CAC /* Persona2.m */,
 				5977656619FD04F700845CAC /* Main.storyboard */,
 				5977656919FD04F700845CAC /* Images.xcassets */,
 				5977656B19FD04F700845CAC /* LaunchScreen.xib */,
@@ -219,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5977658419FD051200845CAC /* Persona.m in Sources */,
 				5977656519FD04F700845CAC /* ViewController.m in Sources */,
+				5977658719FD08D100845CAC /* Persona+DatosCompletosPersona.m in Sources */,
 				5977656219FD04F700845CAC /* AppDelegate.m in Sources */,
 				5977655F19FD04F700845CAC /* main.m in Sources */,
+				5977658A19FD10E100845CAC /* Persona2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
