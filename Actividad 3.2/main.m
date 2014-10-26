@@ -39,11 +39,9 @@ int main(int argc, char * argv[]) {
         
         //Creo el objeto fecha a partir de un calendario con los datos que he utilizado antes
         NSDate *fecha = [[NSCalendar currentCalendar] dateFromComponents:fechaComponents];
-        //Aplico el formato a la fecha
-        fecha = [formatoFecha stringFromDate:fecha]; //devuelve un string con la fecha formateada que sera asignado a ella misma
         
         Persona* persona3 = [[Persona alloc] initWithParams2:@"Javi3" primerApellido:@"Garcia3" fechaNacimiento:fecha];
-        NSLog(@"Nombre: %@, Apellido: %@, Fecha Nacimiento: %@", persona3.nombre, persona3.primerApellido, fecha);
+        NSLog(@"Nombre: %@, Apellido: %@, Fecha Nacimiento: %@", persona3.nombre, persona3.primerApellido, [formatoFecha stringFromDate:fecha]); //Fecha con formato
         
         
         //Actividad 5
