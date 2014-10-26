@@ -35,7 +35,7 @@ int main(int argc, char * argv[]) {
         
         //Establezco el formato que tendrá la fecha
         NSDateFormatter *formatoFecha = [[NSDateFormatter alloc] init];
-        [formatoFecha setDateFormat:@"dd-MM-yyyy"];
+        [formatoFecha setDateFormat:@"dd/MM/yyyy"];
         
         //Creo el objeto fecha a partir de un calendario con los datos que he utilizado antes
         NSDate *fecha = [[NSCalendar currentCalendar] dateFromComponents:fechaComponents];
@@ -45,9 +45,9 @@ int main(int argc, char * argv[]) {
         
         
         //Actividad 5
-        [persona asignarFechaNAc:@"30-12-2015"];
-        [persona asignarFechaNAc:@"30-12-1700"];
-        [persona asignarFechaNAc:@"30-12-2002"];
+        [persona asignarFechaNAc:@"30/12/2015"];
+        [persona asignarFechaNAc:@"30/12/1700"];
+        [persona asignarFechaNAc:@"30/12/2002"];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
