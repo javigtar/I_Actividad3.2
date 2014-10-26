@@ -53,19 +53,24 @@
 
 -(void)asignarFechaNAc:(NSString *)aFecha{
     
+    //Establezco el formato de fecha
     NSDateFormatter *formatoFecha = [[NSDateFormatter alloc] init];
-    [formatoFecha setDateFormat:@"dd-MM-yyyy"];    
+    [formatoFecha setDateFormat:@"dd-MM-yyyy"];
     
-    NSDate *fechaActual = [formatoFecha stringFromDate:[NSDate date]];
+    NSDate *fechaActual = [NSDate date];
     
-    if (aFecha > fechaActual) {
-        NSLog(@"Imposible");
-    }
+    NSDate *fechaLimite = [formatoFecha dateFromString:@"01-01-1880"];
     
-    //NSDateComponents *fechaComponents = [[NSDateComponents alloc] init]
-    //[fechaComponents da]
+    NSDate *fecha = [formatoFecha dateFromString:aFecha];
     
-    
+    if ( [fecha compare:fechaActual] == NSOrderedDescending) {
+        NSLog(@"La fecha no puede ser mayor a la actual");
+    }else if ( [fecha compare:fechaLimite] == NSOrderedAscending) {
+        NSLog(@"La fecha no puede ser menor a 01-01-1880");
+              }else{
+                  _fechaNac = fecha;
+                  NSLog(@"Fecha asignada: %@", [formatoFecha stringFromDate:self.fechaNacimiento]);
+              }
 }
 
 @end
