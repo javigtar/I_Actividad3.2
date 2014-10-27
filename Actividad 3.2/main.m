@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "Persona+DatosCompletosPersona.h";
-#import "Persona2.h";
+#import "Persona+DatosCompletosPersona.h"
+#import "Persona2.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -48,6 +48,9 @@ int main(int argc, char * argv[]) {
         [persona asignarFechaNAc:@"30/12/2015"];
         [persona asignarFechaNAc:@"30/12/1700"];
         [persona asignarFechaNAc:@"30/12/2002"];
+        
+        //Actividad 6
+        NSLog(@"Fecha de nacimiento: %@, Edad: %d años", [formatoFecha stringFromDate:[persona3 fechaNacimiento]], [persona3 calculaEdad]);
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

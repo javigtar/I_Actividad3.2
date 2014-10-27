@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ChesteProtocol.h"
 
-@interface Persona : NSObject
+@interface Persona : NSObject <ChesteProtocol>
 @property (nonatomic, strong) NSString* nombre;
 @property (nonatomic, strong) NSString* primerApellido;
 @property (nonatomic, strong) NSNumber* anyoNacimiento;
@@ -23,5 +24,6 @@
 -(NSString*)diAlgoAlerta;
 -(void)asignarDni:(NSString*)aDni;
 -(void)asignarFechaNAc:(NSString*)aFecha;
+-(int)calculaEdad;
 
 @end

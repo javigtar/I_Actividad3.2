@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59495BC719FE870200755FD9 /* ChesteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChesteProtocol.h; sourceTree = "<group>"; };
 		5977655919FD04F700845CAC /* Actividad 3.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Actividad 3.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5977655D19FD04F700845CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5977655E19FD04F700845CAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		5977655B19FD04F700845CAC /* Actividad 3.2 */ = {
 			isa = PBXGroup;
 			children = (
+				59495BC719FE870200755FD9 /* ChesteProtocol.h */,
 				5977656019FD04F700845CAC /* AppDelegate.h */,
 				5977656119FD04F700845CAC /* AppDelegate.m */,
 				5977656319FD04F700845CAC /* ViewController.h */,
@@ -430,6 +432,7 @@
 				5977657E19FD04F700845CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5977657F19FD04F700845CAC /* Build configuration list for PBXNativeTarget "Actividad 3.2Tests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +441,7 @@
 				5977658119FD04F700845CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

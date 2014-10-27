@@ -73,4 +73,32 @@
               }
 }
 
+-(int)calculaEdad{
+    
+    NSDateFormatter *formatoFecha = [[NSDateFormatter alloc] init];
+    [formatoFecha setDateFormat:@"yyyy"];
+    
+    //Obtememos los componentes de la fecha de nacimiento y la fecha actual
+    NSDateComponents *fechaNacComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth
+                                            | NSCalendarUnitYear fromDate:_fechaNac];
+    
+    NSDateComponents *fechaActComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth
+                                            | NSCalendarUnitYear fromDate:[NSDate date]];
+    
+    //Comprobamos si el mes de nacimiento es mayor que el actual, si lo es le restamos 1 a la diferencia enter el año actual y el de nacimiento
+    if ([fechaNacComponents month] > [fechaActComponents month]) {
+        return (int)([fechaActComponents year] - [fechaNacComponents year]) - 1;
+    }
+    
+    //Comprobamos si el mes de nacimiento y el actual son iguales, si lo son comprobamos si el día de nacimiento es mayor al actual, si lo es restamos
+    //uno a la diferencia entre el año actual y el de nacimiento
+    if ([fechaNacComponents month] == [fechaActComponents month]){
+        if ([fechaNacComponents day] > [fechaActComponents day]) {
+            return (int)([fechaActComponents year] - [fechaNacComponents year]) - 1;
+        }
+    }
+    
+    return (int)([fechaActComponents year] - [fechaNacComponents year]);
+}
+    
 @end
