@@ -75,9 +75,6 @@
 
 -(int)calculaEdad{
     
-    NSDateFormatter *formatoFecha = [[NSDateFormatter alloc] init];
-    [formatoFecha setDateFormat:@"yyyy"];
-    
     //Obtememos los componentes de la fecha de nacimiento y la fecha actual
     NSDateComponents *fechaNacComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth
                                             | NSCalendarUnitYear fromDate:_fechaNac];
