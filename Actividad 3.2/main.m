@@ -41,8 +41,7 @@ int main(int argc, char * argv[]) {
         NSDate *fecha = [[NSCalendar currentCalendar] dateFromComponents:fechaComponents];
         
         Persona* persona3 = [[Persona alloc] initWithParams2:@"Javi3" primerApellido:@"Garcia3" fechaNacimiento:fecha];
-        NSLog(@"Nombre: %@, Apellido: %@, Fecha Nacimiento: %@", persona3.nombre, persona3.primerApellido, [formatoFecha stringFromDate:fecha]); //Fecha con formato
-        
+        NSLog(@"Nombre: %@, Apellido: %@, Fecha Nacimiento: %@", persona3.nombre, persona3.primerApellido, [formatoFecha stringFromDate:fecha]); //Fecha con formato        
         
         //Actividad 5
         [persona asignarFechaNAc:@"30/12/2015"];
